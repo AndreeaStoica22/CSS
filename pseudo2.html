@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width:800px;
+            height: 600px;
+            /* background-color: #ffcccc; */
+            margin:auto;
+            text-align: center;
+            }
+        #slide-1:target{
+            background-image: url(https://picsum.photos/id/1072/800/600)
+            }
+        #slide-2:target{
+             background-image: url(https://picsum.photos/id/102/800/600);
+            }
+        #slide-3:target{
+            background-image: url(https://picsum.photos/id/12/800/600);
+            }
+    </style>
+</head>
+<body>
+    <div id="slide-1">
+        <div id="slide-2">
+            <div id="slide-3">
+                <nav>
+                    <a href="#slide-1">&#9679;</a>
+                    <a href="#slide-2">&#9679;</a>
+                    <a href="#slide-3">&#9679;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

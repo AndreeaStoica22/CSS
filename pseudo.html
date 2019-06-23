@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Pseudo Selectors
+    </title>
+    <style>
+        body{
+             background-color: #555;
+             margin: 0;
+            }
+        nav {
+            background-color: #888;
+            padding: 20px;
+            text-align: right;
+            }
+        input
+            {
+             width:80px;
+             background-color:transparent;
+             border:none;
+             border-bottom: 1px solid #999;
+             outline: none;
+             transition: 0.5s;
+             padding: 5px 0;
+             }    
+        input:focus
+            {
+             border-bottom-color: rgb(83, 70, 70);
+             color: #fff;
+             width:400px;
+            }
+            /* desenul button creat in CSS*/
+        button::before
+            {
+            content:"";
+            display: block;
+            width:10px;
+            height: 10px;
+            border:2px solid black;
+            border-radius: 50%;
+            }
+
+        button::after
+            {
+             content:"";
+             display: block;
+             width: 10px;
+             height: 2px;
+             background-color:black;
+             transform:rotate(45deg);
+             margin-left:9px;
+            }
+        button
+            {
+            background-color: transparent;
+            outline:0;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <form >
+            <label>
+                <input type="text" placeholder="Search Here" >
+            </label>
+            <button> 
+                
+
+            </button>
+        </form>
+    </nav>
+    
+</body>
+</html>
